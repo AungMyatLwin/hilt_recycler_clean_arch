@@ -1,4 +1,4 @@
-package com.rig.todoapps
+package com.rig.todoapps.data
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

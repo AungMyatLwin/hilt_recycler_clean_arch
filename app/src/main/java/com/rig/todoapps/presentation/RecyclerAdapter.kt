@@ -1,4 +1,4 @@
-package com.rig.todoapps
+package com.rig.todoapps.presentation
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.rig.todoapps.R
+import com.rig.todoapps.data.TaskEntity
 import javax.inject.Inject
 
 class RecyclerAdapter @Inject constructor(val taskEntities: List<TaskEntity>) :RecyclerView.Adapter<RecyclerAdapter.MyViewHolder>(){

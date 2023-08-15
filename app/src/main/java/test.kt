@@ -17,11 +17,11 @@
 //import androidx.room.Query
 //import androidx.room.Room
 //import androidx.room.RoomDatabase
-//import com.rig.todoapps.MyViewModel
-//import com.rig.todoapps.Repository
-//import com.rig.todoapps.TaskDao
-//import com.rig.todoapps.TaskEntity
-//import com.rig.todoapps.TodoDatabase
+//import com.rig.todoapps.presentation.MyViewModel
+//import com.rig.todoapps.domain.Repository
+//import com.rig.todoapps.data.TaskDao
+//import com.rig.todoapps.data.TaskEntity
+//import com.rig.todoapps.domain.TodoDatabase
 //import com.rig.todoapps.databinding.ActivityMainBinding
 //import dagger.Module
 //import dagger.Provides
