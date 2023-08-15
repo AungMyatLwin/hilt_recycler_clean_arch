@@ -2,6 +2,9 @@ package com.rig.todoapps.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.View
+import androidx.activity.OnBackPressedCallback
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.rig.todoapps.data.TaskEntity
@@ -26,6 +29,16 @@ class MainActivity : AppCompatActivity() {
                 layoutManager = LinearLayoutManager(this@MainActivity)
             }
         }
+
+        var flag=false
+        var callback = object: OnBackPressedCallback(true){
+            override fun handleOnBackPressed(){
+              // pop to backstack
+            }
+        }
+
+
+        this.onBackPressedDispatcher.addCallback(callback)
 
         viewmodel.getAllTask()
 
